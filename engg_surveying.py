@@ -4,7 +4,7 @@
 # Gives step by step calculation
 # A perfect blend of aesthetic UI and intuitive UX.
 # complete short guide of topics 
-# made by student of Sir Ahmed
+# made by student of Sir
 
 import streamlit as st
 import re
@@ -25,26 +25,8 @@ st.set_page_config(
         App Version 0.617"""}
     )
 
-# def set_bg_image():
-#     st.markdown(
-#         f"""
-#         <style>
-#         .stApp {{
-#             background-image: url("https://raw.githubusercontent.com/smaasui/SMAASU/main/16.jpeg");
-#             background-size: cover;
-#             background-position: center;
-#             background-attachment: fixed;
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
-
-# set_bg_image()  # Apply the background image
-# https://raw.githubusercontent.com/smaasui/SMAASU/main/16.jpeg
-# Sidebar
 st.sidebar.title("👷🏻‍♂️ Engg Surveying I")
-tabs = st.sidebar.radio("", ["Azimuth to Bearing", "Bearing to Azimuth", "Profile Leveling", "Contour Line", "About App", "About Us", "About Me"])
+tabs = st.sidebar.radio("", ["Azimuth to Bearing", "Bearing to Azimuth", "Dedicated to", "Profile Leveling", "Contour Line", "About App", "About Us", "About Me"])
 
 if tabs == "Azimuth to Bearing":
     # function for checking each requirement
@@ -135,7 +117,7 @@ elif tabs == "Bearing to Azimuth":
             if quadrant =="North to East":
                 st.write(f"### Azimuth Angle : {abs(bearing):.2f}˚")
                 st.warning("Only this case it will remain same. ")
-                st.success("My Professor Dr. Ahmed taught me.😊")
+                st.success("My Professor Dr. M. Ahmed taught me.😊")
             elif quadrant =="South to East":
                 st.write(f"### Azimuth Angle : {abs(180-bearing):.2f}˚")
                 st.write(f"After converting Quadrantal Bearing South to East, the Azimuth will become {abs(bearing):.2f}˚")
@@ -214,7 +196,74 @@ elif tabs == "About App":
     col1, col2, col3 = st.columns([1.2,7.6,1.2])
     with col2:
         about_app()
-                    
+
+elif tabs == "Dedicated to":
+    # st.write("# 🏅 Syed Muhammad Abdullah Abdulbadeeii")
+    col1, col2, col3 = st.columns([1.5,7,1.5])
+    with col2:
+
+        # Main Heading with Dedication
+        st.write("# 🌟 Dedicated to Favourite Teacher – Dr. Muhammad Ahmed")
+        st.markdown("### A Visionary Leader in Urban Resilience and Sustainability")
+
+        # Adding Dr. Muhammad Ahmed's Image
+        st.image("https://raw.githubusercontent.com/smaasui/SMAASU/refs/heads/main/file.png", caption="Dr. Muhammad Ahmed")
+
+        # Section 1: Introduction
+        st.header("🏅 About Dr. Muhammad Ahmed")
+        st.write("""
+        Dr. Muhammad Ahmed is an **Assistant Professor in the Department of Urban and Infrastructure Engineering at NED University** 
+        and the **Director of the Centre for Environment and Social Sustainability (CESS)**. With **15+ years of expertise**, he specializes in:  
+        - **Geographical Information Systems (GIS)**  
+        - **Remote Sensing**  
+        - **Urban and Regional Planning**  
+        - **Seismic Hazard Mitigation**  
+
+        His research integrates **technology with disaster resilience and infrastructure planning**, contributing to **regional, national, and international projects** in seismic hazard assessment, traffic engineering, and environmental sciences.
+        """)
+
+        # Section 2: Research Contributions and Leadership
+        st.header("🏅 Research Contributions & Academic Leadership")
+        st.write("Dr. Ahmed has been involved in multiple high-impact projects, including:")
+        projects = {
+            "Disaster Resilience Improvement in Pakistan (DRIP)": "Funded by HEC (PKR 78.94M)",
+            "Toyota Road Improvement Project": "Sponsored by Indus Motors (PKR 11.89M)",
+            "Seismic Risk Assessment of Major Hospitals in Karachi": "In collaboration with UNDP",
+            "Flood and Seismic Risk Assessment for Karachi and Quetta": "Funded by the World Bank"
+        }
+
+        for project, details in projects.items():
+            st.markdown(f"- **{project}** – {details}")
+
+        st.write("He has supervised numerous **Ph.D. and Master’s theses**, covering topics such as:")
+        st.markdown("""
+        - **AI-driven Road Safety using UAV Aerial Footage**  
+        - **GIS-Based Frameworks for Coastal Urban Planning**  
+        - **Probabilistic Seismic Hazard Analysis for Infrastructure Resilience**  
+        """)
+
+        # Section 3: Publications and International Engagement
+        st.header("🏅 Publications & Global Recognition")
+        st.write("Dr. Ahmed has authored several research papers in renowned journals, including:")
+        publications = [
+            "📝 **Decoding Informal Settlements in Karachi using Machine Learning Algorithms** – Remote Sensing in Earth Systems Sciences (2024)",
+            "📝 **From Stationary to Nonstationary UAVs: Deep-Learning-Based Vehicle Speed Estimation** – Algorithms (2024)",
+            "📝 **Probabilistic Seismic Hazard Analysis-Based Zoning Map of Pakistan** – Journal of Earthquake Engineering (2022)"
+        ]
+
+        for pub in publications:
+            st.markdown(pub)
+
+        st.write("""
+        He has represented **Pakistan and NED University** in **global research forums** held in **Turkey, Jordan, the UK, and Portugal**.  
+        He is also an **affiliate member of the Earthquake Engineering Research Institute (EERI)** and has contributed to **national curriculum development** in Remote Sensing, GIS, and Disaster Management.
+        """)
+
+        # Footer
+        st.markdown("---")
+        st.markdown("📢 **Dr. Muhammad Ahmed continues to inspire the next generation of engineers and researchers in urban resilience, disaster preparedness, and sustainable infrastructure.** 🚀")
+
+
 elif tabs == "About Me":
     st.write("# 🏅 Syed Muhammad Abdullah Abdulbadeeii")
     col1, col2, col3 = st.columns([4.5,1,4.5])
