@@ -24,22 +24,22 @@ st.set_page_config(
         App Version 0.617"""}
     )
 
-def set_bg_image():
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("https://raw.githubusercontent.com/smaasui/SMAASU/main/16.jpeg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+# def set_bg_image():
+#     st.markdown(
+#         f"""
+#         <style>
+#         .stApp {{
+#             background-image: url("https://raw.githubusercontent.com/smaasui/SMAASU/main/16.jpeg");
+#             background-size: cover;
+#             background-position: center;
+#             background-attachment: fixed;
+#         }}
+#         </style>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
-set_bg_image()  # Apply the background image
+# set_bg_image()  # Apply the background image
 # https://raw.githubusercontent.com/smaasui/SMAASU/main/16.jpeg
 # Sidebar
 st.sidebar.title("👷🏻‍♂️ Engg Surveying I")
