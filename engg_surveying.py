@@ -3,7 +3,8 @@
 # Convert Azimuth Angle to Quadrantal Bearing
 # Gives step by step calculation
 # A perfect blend of aesthetic UI and intuitive UX.
-#
+# complete short guide of topics 
+# made by student of Sir
 
 import streamlit as st
 import re
@@ -179,29 +180,41 @@ elif tabs == "Bearing to Azimuth":
             st.write(" **Try it out and convert bearing to azimuth instantly!**")
 
 elif tabs == "About App":
-    col1, col2, col3 = st.columns([1.5,7,1.5])
+    # About App Section
+    def about_app():
+        st.markdown("""
+        # 👷🏻‍♂️ **Engineering Surveying I**  
+        #### **By Sir Ahmed**
+                    
+        ## **About App**  
+
+        ### 📌 **Key Features:**  
+
+        ✔️ **Convert Quadrantal Bearing to Azimuth Angle**  
+        → Instantly transform quadrantal bearings into their corresponding azimuth angles using a structured approach.  
+
+        ✔️ **Convert Azimuth Angle to Quadrantal Bearing**  
+        → Quickly determine the correct quadrantal bearing from a given azimuth angle.  
+
+        ✔️ **Step-by-step calculations**  
+        → Each conversion includes a clear breakdown of calculations, ensuring transparency and ease of learning.  
+
+        ✔️ **Aesthetic UI combined with an intuitive UX**  
+        → Designed with clarity in mind, the interface is visually appealing and easy to navigate for a seamless experience.  
+
+        ✔️ **Comprehensive short guide covering fundamental concepts**  
+        → Includes essential explanations, making it a quick reference tool for students and professionals.  
+
+         **Built for engineering students and professionals, this app enhances accuracy and efficiency in surveying calculations.**  
+
+         **Master surveying conversions effortlessly!**  
+        """, unsafe_allow_html=True)
+
+    # Call the function to display the about section
+    col1, col2, col3 = st.columns([1.2,7.6,1.2])
     with col2:
-        # About App Section
-        st.markdown(
-            """
-            # 🔐 Password Sentinel 
-            ## Your Ultimate Password Strength Analyzer
-
-            Developed by **SMAASU Corporation**, Password Sentinel is an advanced web application designed to evaluate and enhance password security. This tool provides real-time password analysis, strength classification, and security suggestions to help you create unbreakable passwords.
-
-            ## ✨ Key Features:
-            - 🛡 **Strength Assessment** – Checks uppercase, lowercase, numbers, and special characters.
-            - 📊 **Password Strength Rating** – Categorizes passwords as **Weak, Moderate, or Strong**.
-            - ⏳ **Crack Time Estimation** – Predicts how long a brute-force attack would take.
-            - ⚠ **Requirement Suggestions** – Highlights missing security requirements.
-            - 🔑 **Strong Password Generator** – Suggests highly secure passwords if needed.
-            - 🔐 **Security Tips** – Educates users on best password practices.
-
-            🚀 **Ensure your passwords are robust and secure with Password Sentinel!**  
-            """,
-            unsafe_allow_html=True
-        )
-            
+        about_app()
+                    
 elif tabs == "About Me":
     st.write("# 🏅 Syed Muhammad Abdullah Abdulbadeeii")
     col1, col2, col3 = st.columns([4.5,1,4.5])
@@ -215,7 +228,7 @@ elif tabs == "About Me":
         # st.image("https://raw.githubusercontent.com/smaasui/SMAASU/main/16.jpeg", use_container_width=True, width=100)
         # Expertise & Interests
         st.write("\n\n")
-        st.header("🚀 Areas of Expertise")
+        st.write("# 🚀 Areas of Expertise")
         st.markdown(
             """
             - 🏗️ **Civil Engineering & Smart Infrastructure** – Engineering sustainable and innovative urban solutions.
@@ -242,7 +255,7 @@ elif tabs == "About Me":
         )
         
         # Vision & Journey
-        st.header("🌍 My Vision & Journey")
+        st.write("# 🌍 My Vision & Journey")
         st.markdown(
             """
             As the founder of **SMAASU Corporation**, I have led groundbreaking initiatives such as **Data Duster**, a web-based platform revolutionizing data processing and automation. 
@@ -253,6 +266,10 @@ elif tabs == "About Me":
             **Let’s collaborate to build a brighter, more progressive future!**
             """
         )
+        
+    st.write("# 🔗 Engineering connections !")
+    st.link_button("🔗 Stay connected on LinkedIn!", "https://www.linkedin.com/in/smaasui/")
+
 
 elif tabs == "About Us":
     col1, col2, col3 = st.columns([1.5,7,1.5])
@@ -300,6 +317,19 @@ elif tabs == "About Us":
             unsafe_allow_html=True
         )
         st.link_button("🔗 Visit SMAASU Corporation", "https://g.co/kgs/VvQB8W9")
+
+if tabs == "Profile Leveling":
+    col1, col2, col3 = st.columns([2,6,2])
+    with col2:
+
+        st.write("# **Releasing Coming Soon...** 🚀")
+        st.write("#### Stay tuned!")
+if tabs == "Contour Line":
+    col1, col2, col3 = st.columns([2,6,2])
+    with col2:
+
+        st.write("# **Releasing Coming Soon...** 🚀")
+        st.write("#### Stay tuned!")
 
 
 
