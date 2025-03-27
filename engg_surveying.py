@@ -4,7 +4,7 @@
 # Gives step by step calculation
 # A perfect blend of aesthetic UI and intuitive UX.
 # complete short guide of topics 
-# made by student of Sir
+# made by student of Sir Ahmed
 
 import streamlit as st
 import re
