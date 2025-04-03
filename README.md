@@ -3,6 +3,9 @@
 
 🚀 **Dedicated to my esteemed teacher, Dr. M.Ahmed, for his incredible guidance in Engineering Surveying.**  
 
+![EnggSur](https://github.com/smaasui/Engg_Surveying-I/blob/main/media/cover.png)  
+
+
 ## **🔍 Overview**  
 This web app simplifies key engineering surveying calculations with an intuitive interface and step-by-step solutions.
 
